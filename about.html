@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>عن الموقع | Wazifi</title>
+  <style>
+    body {
+      font-family: 'Arial';
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: 0.3s;
+    }
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+    }
+    .dark-mode {
+      --bg-color: #1e1e1e;
+      --text-color: #f5f5f5;
+    }
+    header, footer {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .toggle-btn {
+      margin: 15px;
+      float: left;
+      background: #444;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleMode()">تبديل الوضع</button>
+
+  <header>
+    <h1>عن موقع Wazifi</h1>
+  </header>
+
+  <div class="container">
+    <p>Wazifi هو موقع يهدف إلى توفير محتوى شامل يساعد الأفراد على اكتشاف طرق حديثة للكسب من الإنترنت، والحصول على فرص عمل عن بعد بسهولة، باستخدام أدوات الذكاء الاصطناعي.</p>
+    <p>نحن نؤمن بأن العمل عبر الإنترنت هو مستقبل سوق العمل، ونوفر لك كل ما تحتاجه لتبدأ.</p>
+  </div>
+
+  <footer>
+    جميع الحقوق محفوظة © Wazifi 2025
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+    </html>
