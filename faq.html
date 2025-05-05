@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الأسئلة الشائعة | Wazifi</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: 0.3s;
+    }
+    :root {
+      --bg-color: #fff;
+      --text-color: #000;
+    }
+    .dark-mode {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+    }
+    header, footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .question {
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    .answer {
+      margin-bottom: 15px;
+    }
+    .toggle-btn {
+      margin: 15px;
+      float: left;
+      background: #444;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleMode()">تبديل الوضع</button>
+
+  <header>
+    <h1>الأسئلة الشائعة</h1>
+  </header>
+
+  <div class="container">
+    <div class="question">كيف أبدأ باستخدام Wazifi؟</div>
+    <div class="answer">ابدأ بقراءة المقالات ثم تواصل معنا للاشتراك والاستفادة من المحتوى الحصري.</div>
+
+    <div class="question">هل الاشتراك ضروري؟</div>
+    <div class="answer">بعض المحتوى مجاني، ولكن الاشتراك يمنحك محتوى وفرص مميزة.</div>
+
+    <div class="question">هل الموقع يستخدم الذكاء الاصطناعي؟</div>
+    <div class="answer">نعم، نقوم باستخدام الذكاء الاصطناعي لإنتاج مقالات وتحليلات وفرص عمل محسّنة.</div>
+  </div>
+
+  <footer>
+    جميع الحقوق محفوظة © Wazifi 2025
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+  </html>
